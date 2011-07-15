@@ -1,0 +1,235 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>	
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>AndyBlue WP Theme Readme</title>
+	<style type="text/css" media="screen">
+		/* Default Style */
+		BODY {
+			font-family: Verdana, Arial;
+			font-size: 12px;
+			color: #000000;
+			background: #FFFFFF;
+		}
+		P {
+			padding-left: 10px;
+		}
+		BLOCKQUOTE {
+			margin: 10px 20px 0px 20px;
+			padding: 10px;
+			border: 1px solid #8d8d8d;
+			background-color: #f5f5f5;
+		}
+		LI {
+			margin-top: 20px;
+		}
+		UL LI UL LI {
+			margin-top: 10px;
+		}
+		A, A:active, A:link, A:visited {
+			color: #2d3a4c;
+			text-decoration: none;
+		}
+		A:hover {
+			color: #5577a5;
+			text-decoration: underline;
+		}
+		/* Place Holder Style */
+		#Container {
+			width: 780px;
+			margin-left: auto;
+			margin-right: auto; 
+		}
+		#Content {
+			background-color: #fafafa;
+			border: 1px solid #a2b6cb;
+			padding: 10px;
+			margin-top: -13px;
+		}
+		/* Title Style */
+		#Title {
+			font-family: Verdana, Arial;
+			font-size: 22px;
+			font-weight: bold;
+			color: #389aff;
+			border-bottom: 1px solid #389aff;
+			margin-bottom: 10px;
+		}
+		.SubTitle {
+			font-family: Verdana, Arial;
+			font-size: 18px;
+			font-weight: bold;
+			color: #5b87b4;
+		}
+		.SubSubTitle {
+			font-family: Verdana, Arial;
+			font-size: 14px;
+			font-weight: bold;
+			color: #73a4d6;
+		}
+		/* Tabs */
+		UL#Tabs {
+			font-family: Verdana, Arial;
+			font-size: 12px;
+			font-weight: bold;
+			list-style-type: none;
+			padding-bottom: 28px;
+			border-bottom: 1px solid #a2b6cb;
+			margin-bottom: 12px;
+			z-index: 1;
+		}
+		#Tabs LI.Tab {
+			float: right;
+			height: 25px;
+			background-color: #deedfb;
+			margin: 2px 0px 0px 5px;
+			border: 1px solid #a2b6cb;
+		}
+		#Tabs LI.Tab A {
+			float: left;
+			display: block;
+			color: #666666;
+			text-decoration: none;
+			padding: 5px;
+		}
+		#Tabs LI.Tab A:hover {
+			background-color: #bfe0fe;
+			border-bottom: 1px solid #bfe0fe;
+		}
+		/* Selected Tab */
+		#Tabs LI.SelectedTab {
+			float: right;
+			height: 25px;
+			background-color: #fafafa;
+			margin: 2px 0px 0px 5px;
+			border-top: 1px solid #a2b6cb;
+			border-right: 1px solid #a2b6cb;
+			border-bottom: 1px solid #fafafa;
+			border-left: 1px solid #a2b6cb;
+		}
+		#Tabs LI.SelectedTab A {
+			float: left;
+			display: block;
+			color: #666666;
+			text-decoration: none;
+			padding: 5px;
+			cursor: default;
+		}
+		/* Copyright */
+		#Copyright {
+			text-align: center;
+		}
+	</style>
+	<script type="text/javascript">
+		// Index Page
+		function index() {
+			// Tab
+			document.getElementById('IndexTab').className = 'SelectedTab';
+			document.getElementById('InstallTab').className = 'Tab';
+			document.getElementById('CustomizationTab').className = 'Tab';
+			document.getElementById('UsageTab').className = 'Tab';
+			// Page
+			document.getElementById('Index').style.display= 'block';
+			document.getElementById('IndexTab').className = 'SelectedTab';
+			document.getElementById('Install').style.display = 'none';
+			document.getElementById('Customization').style.display = 'none';
+			document.getElementById('Usage').style.display = 'none';
+		}
+		// Installation Page
+		function install() {
+			// Tab
+			document.getElementById('IndexTab').className = 'Tab';
+			document.getElementById('InstallTab').className = 'SelectedTab';
+			document.getElementById('CustomizationTab').className = 'Tab';
+			document.getElementById('UsageTab').className = 'Tab';
+			// Page
+			document.getElementById('Index').style.display= 'none';
+			document.getElementById('Install').style.display = 'block';
+			document.getElementById('Customization').style.display = 'none';
+			document.getElementById('Usage').style.display = 'none';
+		}
+		// Customization Page
+		function upgrade() {
+			// Tab
+			document.getElementById('IndexTab').className = 'Tab';
+			document.getElementById('InstallTab').className = 'Tab';
+			document.getElementById('CustomizationTab').className = 'SelectedTab';
+			document.getElementById('CustomizationTab').href = 'Tab';
+			document.getElementById('UsageTab').className = 'Tab';
+			// Page
+			document.getElementById('Index').style.display= 'none';
+			document.getElementById('Install').style.display = 'none';
+			document.getElementById('Customization').style.display = 'block';
+			document.getElementById('Usage').style.display = 'none';
+		}
+		// Usage Page
+		function usage() {
+			// Tab
+			document.getElementById('IndexTab').className = 'Tab';
+			document.getElementById('InstallTab').className = 'Tab';
+			document.getElementById('CustomizationTab').className = 'Tab';
+			document.getElementById('UsageTab').className = 'SelectedTab';
+			// Page
+			document.getElementById('Index').style.display= 'none';		
+			document.getElementById('Install').style.display = 'none';
+			document.getElementById('Customization').style.display = 'none';
+			document.getElementById('Usage').style.display = 'block';
+		}
+</script>
+</head>
+<body>
+<div id="Container">
+	<!-- Title -->
+	<div id="Title">AndyBlue WP Theme <span style="color: #aaaaaa;">Readme</span></div>
+
+	<!-- Tabs -->
+	<ul id="Tabs">
+		<li id="UsageTab" class="Tab"><a href="#Usage" onclick="usage(); return false;" title="Usage Instructions">Usage</a></li>
+		<li id="CustomizationTab" class="Tab"><a href="#Customization" onclick="upgrade(); return false;" title="Customization Instructions">Customization</a></li>
+		<li id="InstallTab" class="Tab"><a href="#Installation" onclick="install(); return false;" title="Installation Instructions">
+		Installation</a></li>
+		<li id="IndexTab" class="SelectedTab"><a href="#Index" onclick="index(); return false;" title="Index Instructions">Index</a></li>
+	</ul>
+
+	<!-- Content -->
+	<div id="Content">
+		<!-- Index -->
+		<div id="Index">
+			<div class="SubTitle">&raquo; Index</div><br/>
+			<div class="SubSubTitle">General Info</div>
+			<p><b>Version Number</b><br /><b>&raquo;</b> 1.5</p>
+			<p><b>Author</b><br /><b>&raquo;</b> Matteo Luigi Turchetto</p>
+			<p><b>Website:</b><br /><b>&raquo;</b> 
+			<a title="http://www.italiasw.com/" href="http://www.italiasw.com/" style="color: #2d3a4c; text-decoration: none">http://www.italiasw.com/</a></p>
+			<p><b>Demo:</b><br /><b>&raquo;</b> 
+			<a href="http://www.demo.italiasw.com" style="color: #2d3a4c; text-decoration: none">http://www.demo.italiasw.com</a></p>
+			<p><b>Thanks To:</b><br /><b>&raquo;</b>This Theme is inspired on 
+			Andreas 08 Template at 
+			<a href="http://www.andreasviklund.com" style="color: #2d3a4c; text-decoration: none">www.andreasviklund.com</a>. </p>
+			<div class="SubSubTitle">About</div><p>This theme is integrated with AddtoAny Service, people can signal your articles to social bookmarking services, bookmark in IE o Firefox or send Articles to Email. We reccomend to use <b><a href="http://lordchaos.dominatus.net/wordpress-plugin-challenge">WordPress Plugin: Challenge</a></b> together with <b><a href="http://wordpress-plugins.feifei.us/hashcash/">WP Hashcash Plugin for Spam</a></b>, they're all 2.7 compatible.</p>
+			<div class="SubSubTitle">Terms of use</div><p>This theme is free under GPL but you're invited to leave credits intact to the original authors. Realizing a wordpress theme means days of coding and testing on several browsers. Thanks in Advance and Have Fun Blogging !</p></div>
+
+		<!-- Installation Instructions -->
+		<div id="Install" style="display: none;">
+			<div class="SubTitle">&raquo; Work in Progress</div><br/>
+
+		
+		</div>
+
+		<!-- Customization Instructions -->	
+		<div id="Customization" style="display: none;">
+			<div class="SubTitle">&raquo; Work in Progress</div><br/>
+			
+		</div>
+
+		<!-- Usage Instructions -->	
+		<div id="Usage" style="display: none;">
+			<div class="SubTitle">&raquo; Work in Progress</div><br/>
+		
+		
+		</div>
+	</div>
+</div>
+<p id="Copyright">AndyBlue Theme, Realized by <a href="http://www.italiasw.com">Matteo Luigi Turchetto</a>.</p>
+</body>
+</html>

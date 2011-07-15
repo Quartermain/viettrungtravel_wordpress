@@ -1,0 +1,640 @@
+/*
+Theme Name: Tigopedia Reloaded
+Theme URI: http://www.sizlopedia.com/tigopedia/
+Description: Stylish Glossy and Round Cornered Web 2.0 Theme By <a href="http://www.sizlopedia.com/">Sizlopedia</a>
+Author: Sizlopedia
+Author URI: http://www.sizlopedia.com
+Version: 2.0
+*/
+
+/***************************************************************************/
+/* HTML Tags */
+/***************************************************************************/
+
+body {
+	 background:url('images/bg_body.png') repeat top left fixed;
+	 font-family:'Lucida Grande', Verdana, Arial, Sans-Serif;
+	 margin:0;
+         padding:0;
+	 }
+
+h1, h2, h3, h4, h5, h6 {
+	 margin: 0;
+	 font-style: normal;
+	 font-weight: bold;
+	 color: #0066cc;
+	 }
+	
+h1 {
+	 font-size: 1.4em;
+	 }
+h2 {
+	 font-size: 1.2em;
+	 }
+h3, h4, h5, h6 {
+	 font-size: 1.0em;
+	 }
+
+blockquote {
+	 background: url(images/blockquote.gif) no-repeat left top;
+         color: #999;
+	 margin:10px;
+	 padding: 0 40px 0 40px;
+	 }
+
+code {
+         background: #f4f4f4;
+         color: #6a6a6a;
+         margin:0;
+	 }
+
+img {
+         border:0
+	 }
+
+a:link, 
+a:visited {
+	 color: #ff4000;
+	 text-decoration:none;
+	 }
+
+a:hover {
+	 color: #008000;
+	 text-decoration:none;
+	 }
+
+/***************************************************************************/
+/* This is the container for the whole page */
+/***************************************************************************/
+
+.page {
+	 width:950px;
+	 position:relative;
+	 padding:5px;
+	 margin:0 auto;
+	 text-align:left;
+	 }
+
+/***************************************************************************/
+/* Header */
+/***************************************************************************/
+
+.header {
+	 background:url('images/headerbg.gif') no-repeat center top;
+	 margin:0 0 5px 0;
+	 padding:30px 0px 30px 40px;
+	 }
+	   
+.logo {
+	 background:url('images/logo.png') no-repeat left top;
+         height:70px;
+         margin:0;
+	 }
+	   
+.blog-name:link, 
+.blog-name:visited, 
+.blog-name:hover{
+	 color:#0066cc;
+	 font-family: 'Trebuchet MS', Verdana, Sans-Serif;
+	 font-size:26pt;
+	 font-weight:bold;
+	 text-decoration:none;
+	 letter-spacing: -1px;
+	 background:transparent;
+	 margin:0 0 0 80px;
+	 padding:0;
+	 }
+
+.blog-description {
+	 color:#008000;
+	 font-size:10pt;
+	 font-weight:bold;
+	 margin:0px 0px 0px 80px;
+	 padding:0;
+	 }
+
+/***************************************************************************/
+/* Menu Bar */
+/***************************************************************************/
+
+.menu-bar {
+	 background: url('images/menubg.gif') no-repeat;
+	 padding:10px 0 40px 0;
+         margin:0 0 5px 0;
+	 }
+
+.feed {
+     float:right;
+	 font-size:10pt;
+	 margin:4px 20px 4px 0 !important;
+	 margin:4px 10px 4px 0;
+	 }
+
+.feed a.rss {
+     color:#ff4000;
+	 padding: 0 0 0 25px;
+	 background: transparent url(images/rss.gif) no-repeat 5px 0;
+	 }
+
+.feed a.techno {
+         color:#008000;
+	 padding: 0 0 0 25px;
+	 background: transparent url(images/techno.png) no-repeat 4px 0;
+	 }
+
+ul.menu {
+	 float: left;
+	 margin: 0;
+	 padding: 0 15px;
+	 list-style-type: none;
+	 }
+	
+ul.menu li {
+	 float: left;
+	 }
+	
+ul.menu li a {
+	 float: left;
+	 display: block;
+	 height: 20px;
+	 padding: 4px 15px 0 15px;
+	 color: #0066cc;
+	 font-weight:normal;
+	 font-size:10pt;
+	 }
+	
+ul.menu li a:link,
+ul.menu li a:visited {
+	 color: #0066cc;
+	 }
+	 
+ul.menu li a:hover,
+ul.menu li a:active {
+	 color: #0066cc;
+	 text-decoration: none;
+	 background-color:#f1f9ff;
+	 border:1px solid #a5d6f8;
+	 padding: 3px 14px 0 14px;
+	 }
+
+ul.menu li.current_page_item a:link,
+ul.menu li.current_page_item a:visited {
+	 color: #0066cc;
+	 text-decoration: none;
+	 }
+		
+ ul.menu li.current_page_item a:hover {
+ 	 color: #0066cc;
+	 text-decoration: none;
+	 background-color:#f1f9ff;
+	 border:1px solid #a5d6f8;
+	 }
+
+/***************************************************************************/
+/* Post */
+/***************************************************************************/
+
+h2.post-title a:link, 
+h2.post-title a:visited {
+         color:#0066cc;
+	 }
+
+h2.post-title a:hover {
+         color:#0066cc;
+	 border-bottom: 1px dashed #a0a0a0;
+	 }
+
+.post-content {
+	 color:#444;
+         margin:15px 0 0 0;
+	 width:500px;
+	 overflow:hidden;
+	 padding:0 !important;
+	 padding:0 0 15px 0;
+	 }
+
+.post-content a:link,
+.post-content a:visited {
+         color:#0066cc
+	 }
+
+.post-content a:hover {
+         color:#0066cc;
+	 border-bottom: 1px dashed #a0a0a0;
+	 }
+
+.post-content img,
+.post-content img:hover {
+         padding:0;
+	 border:0;
+	 }
+
+.post-content ul li {
+         background: url('images/bullet.gif') no-repeat 0 0;
+         list-style:none;
+	 padding:0 0 0 15px;
+	 margin:6px 0 0 -10px;
+	 }
+
+.post-content ol li {
+	 padding:0;
+	 margin:6px 0 0 0px;
+	 }
+
+.postmeta {
+	 margin: 8px 2px;
+	 font-size:8pt;
+	 }
+
+.post-date {
+	 background: url(images/date.gif) no-repeat 0 0;
+	 padding: 0 0 0 20px;
+	 }
+
+.post-comment {
+	 background: url(images/commentslink.png) no-repeat 0 0;
+	 padding: 0 0 0 20px;
+	 }
+
+.post-comment a:link,
+.post-comment a:visited,
+.post-comment a:hover {
+         color:#008000
+	 }
+
+.post-filed {
+	 background: url(images/filed.gif) no-repeat 2px 0;
+	 padding: 0 0 0 20px;
+	 }
+
+.more-link{
+         margin:0
+         }
+
+/***************************************************************************/
+/* Sidebars */
+/***************************************************************************/
+
+.left-sidebar, .right-sidebar {
+         margin:5px 0 0 0 !important;
+	 margin:0;	
+	 overflow:hidden;
+	 float:left;
+	 }
+
+.left-sidebar {
+	 width:210px;
+	
+	 }
+
+.right-sidebar {
+	 width:210px;
+	 float:right;
+	 }
+
+/***************************************************************************/
+/* WordPress Sidebar Widgets */
+/***************************************************************************/
+
+.wp-widget-title {
+	 position: relative; 
+	 top: -24px;
+	 background:url('images/widgetbg.gif') no-repeat;
+	 color:#FFFFFF;
+	 font-size: 10pt;
+	 font-weight: bold;
+	 padding:6px 0 6px 15px;
+	 margin:0;
+	 }
+
+.wp-widget-title a:link,
+.wp-widget-title a:visited,
+.wp-widget-title a:hover{
+	 color:#FFFFFF;
+	 }
+
+.wp-widget {
+	 background:url('images/widget_bottom_bg.gif') no-repeat bottom;
+	 color:#555;
+	 padding:0;
+	 margin: 25px 0 35px 0;
+         font-size:8pt;
+	 }
+
+.wp-widget ul {
+         list-style:none;
+	 position: relative; 
+	 top: -15px;
+         margin:5px 10px 5px 15px;
+         padding:0;
+	 }
+
+.wp-widget ul li {
+         background: url('images/bullet.gif') no-repeat 0px 0px;
+         margin:0 0 10px 0;
+         padding:0 0 0 14px;
+         line-height:15px;
+         font-size:8pt;
+	 }
+	 
+.search-widget-title {
+	 background:url('images/widgetbg.gif') no-repeat;
+	 color:#fff;
+	 font-size: 10pt;
+	 font-weight: bold;
+	 padding:6px 0px 6px 15px;
+	 margin:-25px 0 0 0;
+	 }
+
+.search-widget {
+	 color:#555;
+	 background:url('images/widget_bottom_bg.gif') no-repeat bottom;
+	 padding:10px;
+	 margin:0px 0 35px 0;
+         font-size:10pt;
+	 }
+
+.textwidget {
+         position: relative; 
+         top: -15px;
+         margin:0px 0px 0px 5px;
+         padding:0px 5px;
+         }
+
+.textwidget ul {
+         list-style:none;
+	 position: relative; 
+	 top: 0px;
+         margin:0 0 0 5px;
+         padding:0;
+	 }
+
+.textwidget ul li {
+         background: url('images/bullet.gif') no-repeat 0 0;
+         margin:5px 0 10px 0;
+         padding:0 0 0 14px;
+         line-height:15px;
+	 }
+
+#calendar_wrap {
+	 position: relative; 
+	 top: -10px;
+         margin:0 40px;
+	 }
+
+#akismetwrap {
+         position: relative; 
+	 top: -15px;
+         margin:0 45px;
+	 }
+
+#cat, select {
+         position: relative; 
+	 top: -10px;
+         margin:0 45px;;
+	 }
+	 
+.widget_categories ul li ul.children{
+         position: relative; 
+	 top: 0px;
+	 left:-10px;
+	 }
+
+.widget_pages ul li.page_item li{
+         position: relative; 
+	 top: 20px;
+	 left:-10px;
+     }
+	 
+/***************************************************************************/
+/* Old Style Tigopedia Widgets */
+/***************************************************************************/
+
+.widget-title {
+	 background:url('images/widgetbg.gif') no-repeat;
+	 color:#fff;
+	 font-size: 10pt;
+	 font-weight: bold;
+	 padding:6px 0px 6px 15px;
+	 }
+
+.widget-title a:link,
+.widget-title a:visited,
+.widget-title a:hover {
+	 color:#fff;
+	 }
+
+.widget {
+	 color:#555;
+	 background:url('images/widget_bottom_bg.gif') no-repeat bottom;
+	 padding:10px;
+	 margin:0 0 10px 0;
+         font-size:8pt;
+	 }
+
+.widget ul {
+         list-style:none;
+         margin:5px 5px 0px 5px;
+         padding:0px;
+         }
+
+.widget ul li {
+         background: url('images/bullet.gif') no-repeat 0px 0px;
+         margin-bottom:10px;
+         padding-left:14px;
+         line-height:15px;
+         font-size:8pt;
+         }
+
+.center-widget-title {
+	 background:url("images/center_widget_bg.gif") center top no-repeat;
+	 color:#0066cc;
+	 font-size:16px;
+	 font-weight: bold;
+	 margin:0px 210px 0px 210px;
+	 padding:8px 0px 0px 15px;
+	 }
+	 
+.center-widget {
+         background:url('images/center_widget_bottom_bg.gif') center bottom no-repeat;
+	 color:#555;
+	 margin:0px 210px 6px 210px;
+	 padding:0.1em 1.2em 0.6em 1.2em;
+	 font-size:10pt;
+	 }
+	 
+.center-widget a:link,
+.center-widget a:visited {
+         color:#0066cc
+	 }
+
+.center-widget a:hover {
+         color:#0066cc;
+	 border-bottom: 1px dashed #a0a0a0;
+	 }
+
+.center-widget ul li {
+         background: url('images/bullet.gif') no-repeat 0 0;
+         list-style:none;
+	 padding:0 0 0 15px;
+	 margin:6px 0 0 -10px;
+	 }
+
+.center-widget ol li {
+	 padding:0;
+	 margin:6px 0 0 0px;
+	 }
+
+.bottom-page-nav {
+         text-align:center;
+	 color: #0066cc;
+	 }
+
+.bottom-page-nav a:link,
+.bottom-page-nav a:visited,
+.bottom-page-nav a:hover {
+         color:#0066cc;
+	 }
+
+.footer {
+	 color:#555;
+	 font-size:10pt;
+         font-weight:normal;
+	 text-align:center;
+         padding:0px 0px;
+         margin:0;
+		 clear:both;
+         }
+	 
+.footer a:link,
+.footer a:visited,
+.footer a:hover {
+         color:#0066cc;
+	 }
+
+/* Comments Styles */
+
+.comment-list {
+	 padding:0;
+	 margin:0 15px 20px 15px;
+	 }
+
+.comment-meta {
+         position:relative;
+	 top:-20px;
+         color: #555555;
+         font-size:10pt;
+         margin:50px 0 0 0;
+	 }
+
+.odd-comment .comment-meta a:link,
+.odd-comment .comment-meta a:visited,
+.odd-comment .comment-meta a:hover {
+         color: #0066cc;
+         font-weight:bold;
+	 }
+
+.even-comment .comment-meta a:link,
+.even-comment .comment-meta a:visited,
+.even-comment .comment-meta a:hover {
+         color: #008000;
+         font-weight:bold;
+	 }
+
+.odd-comment .comment-meta .comment-author {
+         color: #0066cc;
+         font-weight:bold;
+	 }
+
+.even-comment .comment-meta .comment-author {
+         color: #008000;
+         font-weight:bold;
+	 }
+
+.odd-comment .comment-text {
+         position:relative;
+	 top:-10px;
+         background:url('images/comment-bg-gradient.gif') top left repeat-y; 
+         color: #555;
+         border:1px solid #b6cefe;
+	 padding:0px 10px !important;
+	 padding:10px 10px;
+         width:440px;
+         overflow:hidden;
+	 }
+
+.even-comment .comment-text {
+         position:relative;
+	 top:-10px;
+         background:url('images/comment-bg-gradient-green.gif') top left repeat-y; 
+	 color: #555;
+         border:1px solid #add3ad;
+	 padding:0px 10px !important;
+	 padding:10px 10px;
+         width:440px;
+         overflow:hidden;
+	 }
+
+.odd-comment .comment-text a:link,
+.odd-comment .comment-text a:visited,
+.odd-comment .comment-text a:hover{
+         color:#0066CC;
+         text-decoration:none;
+         }
+	 
+.even-comment .comment-text a:link,
+.even-comment .comment-text a:visited,
+.even-comment .comment-text a:hover{
+         color:#008000;
+         text-decoration:none;
+         }
+
+#commentform a:link,
+#commentform a:hover,
+#commentform a:visited {
+         color:#0066cc;
+	 }
+
+/* input */
+
+#searchform {
+	 margin:0;
+	 }
+	
+input#s {
+	 color:#777;
+	 width: 90%;
+	 height: 18px;
+	 margin: 0;
+	 padding: 2px;
+	 border-left: 1px solid #aaa;
+         border-top:1px solid #aaa;
+ 	 border-right:1px solid #ddd;
+	 border-bottom:1px solid #ddd;
+	 }
+
+input {
+	 color:#555;
+	 }
+
+textarea#comment {
+         width:470px;
+         color:#555;
+	 border-left: 1px solid #aaa;
+         border-top:1px solid #aaa;
+ 	 border-right:1px solid #ddd;
+	 border-bottom:1px solid #ddd;
+         font-size:10pt;
+	 }
+
+input#author,
+input#email,
+input#url {
+         width:200px;
+         color:#555;
+	 border-left: 1px solid #aaa;
+         border-top:1px solid #aaa;
+ 	 border-right:1px solid #ddd;
+	 border-bottom:1px solid #ddd;
+         font-size:10pt;
+         }

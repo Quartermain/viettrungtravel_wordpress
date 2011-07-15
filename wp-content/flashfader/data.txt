@@ -1,0 +1,1 @@
+a:9:{s:12:"lynkff_width";s:3:"566";s:13:"lynkff_height";s:3:"300";s:12:"lynkff_color";s:7:"#ffffff";s:12:"lynkff_order";s:1:"0";s:11:"lynkff_loop";s:1:"1";s:11:"lynkff_time";s:1:"5";s:11:"lynkff_fade";s:1:"2";s:12:"lynkff_valid";s:1:"1";s:13:"lynkff_submit";s:4:"Save";}

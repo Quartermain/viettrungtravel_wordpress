@@ -1,0 +1,1 @@
+<form class="qs" id="searchform" method="get" action="<?php echo $_SERVER['PHP_SELF']; ?>">  <input type="submit" id="searchsubmit" value=""/>  <input type="text" class="textfield" id="s" name="s" value="<?php echo wp_specialchars($search_text, 1); ?>" size="21" maxlength="255" /></form>
