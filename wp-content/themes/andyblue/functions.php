@@ -151,21 +151,13 @@ $options = array (
 
 			"desc" => "vào mã category.",
 
-			"id" => $shortname."_cat3",
+			"id" => $shortname."_cat5",
 
 			"std" => "10",
 
 			"type" => "text"),
 
-			array(	"name" => "Thông Tin Hữu Ích",
-
-			"desc" => "vào mã category Thông Tin Hữu Ích.",
-
-			"id" => $shortname."_cat2",
-
-			"std" => "18",
-
-			"type" => "text"),
+			
 			array(	"name" => "Thông Tin Liên quan",
 
 			"desc" => "vào mã category thông tin liên quan.",

@@ -59,47 +59,45 @@
 						</div>        
 
         </div>
-		        <div class="moduletable_menu1">
+		        
 
-        	<div class="BGmiddle">
+        <div class="moduletable_menu1">
 
-               <?php
+      	  <div class="BGmiddle listCategorys">
+<h3 class='fontpage componentheading'>Dịch vụ du lịch</h3>
+					<ul class="listCategory dvdl">
 
-              	 echo '<ul class=" qcategoriescategory dvdl" >';
+					<?php
 
-                 echo "<h3 class='fontpage componentheading'>Dịch Vụ Du Lịch</h3>";
+     		   echo "";
 
+     		   $my_query = new WP_Query('cat='.get_theme_option('cat5').'&showposts=4');
 				
+    		    while ($my_query->have_posts()) : $my_query->the_post();$do_not_duplicate = $post->ID; ?>
 
-                 foreach( get_categories('hide_empty=0&parent='.get_theme_option('cat3')) as $cat ) :			 
 
-                    $category_id = get_cat_ID( $cat->name );
+    		   	 <li>
 
-                    $category_link = get_category_link( $category_id );
+							<a class="thumb" href="<?php the_permalink();?>"><?php if(has_post_thumbnail()) {the_post_thumbnail('thumbnail');}?></a>
 
-                    $categoryimg= $cat->slug ;
+        			<h4><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>"><?php the_title(); ?></a>
 
-                    echo '<li >';
+							</h4>
 
-                ?><a class="category" href="<?php echo $category_link ?>"><img   src="<?php bloginfo( 'template_directory' ); ?>/timthumb.php?src=<?php echo get_home_url(); ?>/wp-content/uploads/<?php echo $cat->slug ; ?>.jpg&amp;w=164&amp;h=120&amp;zc=1" alt="<?php echo $cat->slug; ?>" />
+        				<?php the_excerpt_max_charlength(100); ?>
 
-              	  </a>
+       			 </li>    
 
-                    <a href="<?php echo $category_link ?>"><?php echo $cat->name; ?></a>                
+      		  <?php endwhile; ?>
 
-                <?php 
+					</ul>
 
-                echo '</li >';
+        <?php wp_reset_query(); ?>
 
-                 endforeach;
-
-                echo '</ul >';
-
-                ?>
-
-						</div>        
+					</div>
 
         </div>
+
 
         <div class="moduletable_menu1">
 
