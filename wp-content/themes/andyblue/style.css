@@ -356,7 +356,7 @@ p {
 .Boxs > ul > div ,.moduletable_menu1,.MainCotent{	
  background: none;
 }
- .moduletable_menu1  { margin:10px 0; }
+ .moduletable_menu1  { margin: 0px 0px 10px 0px; }
  .BGmiddle {padding:10px;}
  
 .listCategory li {
