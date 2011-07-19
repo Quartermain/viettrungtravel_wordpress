@@ -6,7 +6,6 @@
 body {
 	font-family: verdana,Tahoma, Arial, Helvetica, sans-serif;
 	color: #1f1f1f;
-	background: #5d5d5d;
 	font-size:12px;
 }
 
@@ -30,7 +29,7 @@ ul ,li{
 	list-style: none;
 }
 .menu li {
-	padding: 2px 0px 2px 13px;
+	padding: 2px 0px 2px 6px;
 	line-height: 20px;
 	
 }
@@ -60,11 +59,22 @@ p {
 	padding: 0px 0px;
 }
 
+.BgBodyFooter{
+	background:url(images/BgFooterBody.png) no-repeat center bottom;
+}
+
+.BgBodyHeader{
+	background:#fff url(images/BgHeaderBody.png) no-repeat center top;
+}
+
+
 /*layout**/
 #Wrapper {
 	margin:0 auto;
 	width:1000px;
 	background:white;
+	border-left: solid 1px #eeeeee;
+	border-right: solid 1px #eeeeee;
 }
 
 .UINavigation {
@@ -73,12 +83,10 @@ p {
 
 }
 
-
 .UINavigation .NaviR {
 	background:url(images/bgNavi.png) no-repeat right  top;
 	padding-right: 6px;
 }
-
 
 .UINavigation  .NaviM{	
 	height: 44px;
@@ -376,13 +384,15 @@ p {
 	border-radius:5px;
 }
 .moduletable_menu ul  li a,.blogsection , .Boxs > ul  li a, .relative li a{
-	background: url(images/listIcon.png) no-repeat left 10px;
+	background: url(images/listIcon.png) no-repeat left 8px;
 	padding-left:10px;
 	display:block;
 	clear:both;
-	color:#000;
+	color:#004667;
 	text-transform: capitalize;
 	line-height: 20px;
+	font-weight: bold;
+	font-size: 11px;
 }
 
 .Boxs > ul  li a:hover{
@@ -420,9 +430,8 @@ p {
 	background:#fff;
 }
 
-
 .UIBreadcumb {
-	padding: 10px 10px 10px 30px;
+	padding: 5px 10px 5px 30px;
 	background: url(images/IconHome.png) no-repeat 10px center;
 	text-transform: capitalize;
 }
@@ -545,10 +554,11 @@ padding:5px 0;
 
 #footer {
 	text-align:center;
-	height:90px;
-	padding-top:10px;
+	height:70px;
+	padding-top:15px;
 	background:#eeeeee;
 	clear:both;
+	border-top: solid 1px #5d5d5d;
 }
 
 .phoneIcon {

@@ -24,11 +24,12 @@
 
 	<?php wp_head(); ?>
 </head>
-<body>
+<body class="BgBodyHeader">
+<div class="BgBodyFooter">
 <div id="Wrapper">
 	<div id="UIHeader">	
-<object codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8.0.22.0" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" height="242" width="1000"><param name="movie" value="http://localhost/wordpress32/wp-content/uploads/2011/07/flash.swf"> <param name="quality" value="high"> <embed src="http://localhost/wordpress32/wp-content/uploads/2011/07/flash.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" height="242" width="1000"></object>
-    <noscript><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8.0.22.0" width="1000" height="242"> <param name="movie" value="http://localhost/wordpress32/wp-content/uploads/2011/07/flash.swf"/> <param name="quality" value="high" /><embed src="http://localhost/wordpress32/wp-content/uploads/2011/07/flash.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="1000" height="242"></embed></object></noscript>			
+<object codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8.0.22.0" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" height="242" width="1000"><param name="movie" value="<?php bloginfo('template_directory'); ?>/Banner.swf"> <param name="quality" value="high"> <embed src="<?php bloginfo('template_directory'); ?>/Banner.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" height="242" width="1000"></object>
+    <noscript><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8.0.22.0" width="1000" height="242"> <param name="movie" value="<?php bloginfo('template_directory'); ?>/Banner.swf"/> <param name="quality" value="high" /><embed src="<?php bloginfo('template_directory'); ?>/Banner.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="1000" height="242"></embed></object></noscript>			
 	</div>
 	<div class="UINavigation">
 		<div class="NaviR">
